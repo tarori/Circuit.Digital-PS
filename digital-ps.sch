@@ -2438,6 +2438,9 @@ Takuo Sawada&lt;br&gt;
 <part name="R4" library="my_rcl" deviceset="R" device="-2012" value="10k"/>
 <part name="R16" library="my_rcl" deviceset="R" device="-2012" value="10k"/>
 <part name="SUPPLY32" library="my_supply" deviceset="GND" device=""/>
+<part name="R17" library="my_rcl" deviceset="R" device="-2012" value="10"/>
+<part name="C29" library="my_rcl" deviceset="C" device="-1608" value="1n"/>
+<part name="SUPPLY33" library="my_supply" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2802,6 +2805,15 @@ Takuo Sawada&lt;br&gt;
 <attribute name="VALUE" x="158.242" y="24.13" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="SUPPLY32" gate="GND" x="154.94" y="20.32" smashed="yes"/>
+<instance part="R17" gate="G$1" x="172.72" y="38.1" smashed="yes" rot="R90">
+<attribute name="NAME" x="171.2214" y="34.29" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="176.022" y="34.29" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="C29" gate="G$1" x="172.72" y="30.48" smashed="yes">
+<attribute name="NAME" x="173.99" y="31.115" size="1.778" layer="95"/>
+<attribute name="VALUE" x="173.99" y="28.575" size="1.778" layer="96"/>
+</instance>
+<instance part="SUPPLY33" gate="GND" x="172.72" y="25.4" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -2978,6 +2990,10 @@ Takuo Sawada&lt;br&gt;
 <pinref part="R16" gate="G$1" pin="1"/>
 <pinref part="SUPPLY32" gate="GND" pin="GND"/>
 </segment>
+<segment>
+<pinref part="C29" gate="G$1" pin="2"/>
+<pinref part="SUPPLY33" gate="GND" pin="GND"/>
+</segment>
 </net>
 <net name="+3V3" class="0">
 <segment>
@@ -3119,11 +3135,15 @@ Takuo Sawada&lt;br&gt;
 <pinref part="C2" gate="G$1" pin="2"/>
 <junction x="137.16" y="40.64"/>
 <pinref part="L1" gate="G$1" pin="1"/>
-<wire x1="175.26" y1="45.72" x2="165.1" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="45.72" x2="172.72" y2="45.72" width="0.1524" layer="91"/>
 <junction x="165.1" y="45.72"/>
 <label x="170.18" y="45.72" size="1.778" layer="95"/>
 <pinref part="R4" gate="G$1" pin="1"/>
 <junction x="154.94" y="40.64"/>
+<pinref part="R17" gate="G$1" pin="2"/>
+<wire x1="172.72" y1="45.72" x2="165.1" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="43.18" x2="172.72" y2="45.72" width="0.1524" layer="91"/>
+<junction x="172.72" y="45.72"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -3516,6 +3536,12 @@ Takuo Sawada&lt;br&gt;
 <wire x1="45.72" y1="68.58" x2="45.72" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="TP21" gate="G$1" pin="1"/>
 <pinref part="IC1" gate="G$1" pin="PA15"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="R17" gate="G$1" pin="1"/>
+<pinref part="C29" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>
