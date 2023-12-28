@@ -168,7 +168,7 @@
 <wire x1="95.25" y1="54.61" x2="95.25" y2="0" width="0.3048" layer="20"/>
 <wire x1="95.25" y1="0" x2="0" y2="0" width="0.3048" layer="20"/>
 <wire x1="0" y1="0" x2="0" y2="54.61" width="0.3048" layer="20"/>
-<text x="82.2325" y="10.16" size="1.905" layer="21" font="vector" ratio="10" rot="R90">Digital PS ver2</text>
+<text x="85.09" y="6.35" size="1.905" layer="21" font="vector" ratio="10" rot="R90">Digital PS GaN ver2</text>
 <polygon width="0.2032" layer="30">
 <vertex x="60.80125" y="39.84625"/>
 <vertex x="60.80125" y="36.98875"/>
@@ -204,6 +204,7 @@
 <wire x1="40.9575" y1="32.7025" x2="40.9575" y2="40.9575" width="0.2032" layer="41"/>
 <wire x1="40.9575" y1="40.9575" x2="44.1325" y2="40.9575" width="0.2032" layer="41"/>
 <wire x1="44.1325" y1="40.9575" x2="44.1325" y2="32.7025" width="0.2032" layer="41"/>
+<text x="21.59" y="6.35" size="1" layer="21" font="vector" ratio="15">JLCJLCJLCJLC</text>
 </plain>
 <libraries>
 <library name="my_rcl">
@@ -1329,13 +1330,12 @@ design rules under a new name.
 <via x="23.8125" y="26.67" extent="1-16" drill="0.35" diameter="0.55"/>
 <via x="21.59" y="21.59" extent="1-16" drill="0.35" diameter="0.55"/>
 <via x="24.4475" y="20.0025" extent="1-16" drill="0.35" diameter="0.55"/>
-<via x="35.56" y="5.08" extent="1-16" drill="0.35" diameter="0.55"/>
+<via x="35.56" y="4.445" extent="1-16" drill="0.35" diameter="0.55"/>
 <via x="33.02" y="8.89" extent="1-16" drill="0.35" diameter="0.55"/>
-<via x="29.21" y="5.08" extent="1-16" drill="0.35" diameter="0.55"/>
+<via x="29.21" y="4.445" extent="1-16" drill="0.35" diameter="0.55"/>
 <via x="25.4" y="8.89" extent="1-16" drill="0.35" diameter="0.55"/>
 <via x="45.72" y="20.955" extent="1-16" drill="0.35" diameter="0.55"/>
-<via x="30.48" y="7.62" extent="1-16" drill="0.35" diameter="0.55"/>
-<via x="27.94" y="7.62" extent="1-16" drill="0.35" diameter="0.55"/>
+<via x="29.21" y="8.89" extent="1-16" drill="0.35" diameter="0.55"/>
 <via x="34.925" y="13.97" extent="1-16" drill="0.35" diameter="0.55"/>
 <via x="38.1" y="13.97" extent="1-16" drill="0.35" diameter="0.55"/>
 <via x="40.64" y="13.97" extent="1-16" drill="0.35" diameter="0.55"/>
